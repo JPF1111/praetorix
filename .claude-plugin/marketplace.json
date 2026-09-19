@@ -1,0 +1,15 @@
+{
+  "name": "praetorix",
+  "description": "The elite execution gate for AI agent skills, built on NVIDIA SkillSpector.",
+  "owner": {
+    "name": "JP Finley",
+    "url": "https://github.com/JPF1111"
+  },
+  "plugins": [
+    {
+      "name": "praetorix",
+      "source": "./",
+      "description": "Blocks any Skill tool invocation until it's been scanned by SkillSpector and approved into a content-hash-keyed ledger; re-blocks automatically on any change."
+    }
+  ]
+}

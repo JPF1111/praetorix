@@ -1,0 +1,62 @@
+site_name: Praetorix
+site_description: The elite execution gate for AI agent skills.
+site_url: https://jpf1111.github.io/praetorix/
+repo_url: https://github.com/JPF1111/praetorix
+repo_name: JPF1111/praetorix
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/icon.svg
+  favicon: assets/icon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Install: getting-started/install.md
+      - First scan and approval: getting-started/first-approval.md
+  - Architecture:
+      - Pipeline: architecture/pipeline.md
+      - Trust model: architecture/trust-model.md
+  - Reference:
+      - CLI: reference/cli.md
+      - Ledger schema: reference/ledger-schema.md
+      - Environment variables: reference/environment.md
+  - Security: security/index.md
+  - Operations:
+      - Doctor and audit: operations/doctor-and-audit.md
+      - Troubleshooting: operations/troubleshooting.md
+  - Development: development/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - tables
+  - toc:
+      permalink: true

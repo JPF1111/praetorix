@@ -1,0 +1,12 @@
+{
+  "name": "praetorix",
+  "version": "0.1.0",
+  "description": "The elite execution gate for AI agent skills. Nothing runs until it's scanned by NVIDIA SkillSpector, approved, and unchanged.",
+  "author": {
+    "name": "JP Finley",
+    "url": "https://github.com/JPF1111"
+  },
+  "homepage": "https://jpf1111.github.io/praetorix/",
+  "license": "Apache-2.0",
+  "keywords": ["security", "skills", "skillspector", "supply-chain", "hooks", "agent-security"]
+}

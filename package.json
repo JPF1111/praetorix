@@ -1,0 +1,41 @@
+{
+  "name": "praetorix",
+  "version": "0.1.0",
+  "description": "The elite execution gate for AI agent skills. Nothing runs until it's scanned, approved, and unchanged.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "praetorix": "bin/praetorix.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "hooks",
+    "skills",
+    ".claude-plugin",
+    "assets/icon.svg",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPF1111/praetorix.git"
+  },
+  "homepage": "https://jpf1111.github.io/praetorix/",
+  "bugs": "https://github.com/JPF1111/praetorix/issues",
+  "keywords": [
+    "claude-code",
+    "security",
+    "skills",
+    "agent-security",
+    "supply-chain",
+    "hooks",
+    "skillspector"
+  ]
+}
