@@ -1,0 +1,10 @@
+# Force LF line endings on checkout for every platform. This repo's content
+# hashing (src/hash.js) is byte-exact by design — see
+# docs/architecture/trust-model.md — so a file checked out with different
+# line endings on Windows than on macOS/Linux must not silently produce a
+# different hash. Without this, git's default core.autocrlf=true on Windows
+# runners rewrites LF to CRLF on checkout, which changed the hash of the
+# vendored skills/skill-inspector/SKILL.md and broke the hardcoded trust
+# check in src/trusted.js — caught by CI (test/trusted.test.js), not
+# guessed at.
+* text=auto eol=lf

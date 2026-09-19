@@ -38,6 +38,18 @@ approval, running without your knowledge or an explicit decision.
   load-and-execute sequence, which is outside what a `PreToolUse` hook can control. This is a
   real, narrow, low-likelihood limitation — documented rather than silently assumed away.
 
+## Hashing is byte-exact on purpose
+
+`src/hash.js` hashes raw file bytes — it does not normalize line endings, whitespace, or
+encoding. Two files that differ only by CRLF vs. LF hash differently and are treated as
+different content, on purpose: silently normalizing away *any* byte-level difference before
+hashing would mean two skills with genuinely different content could hash identically, which
+defeats the point of content-hash pinning. If you distribute or edit skills across both Windows
+and macOS/Linux, make sure your own editor and VCS settings keep line endings consistent — this
+repository's own vendored content does so via [`.gitattributes`](https://github.com/JPF1111/praetorix/blob/main/.gitattributes),
+forcing LF on checkout regardless of platform, which is what CI's cross-platform test matrix
+caught and fixed before 0.1.0 shipped.
+
 ## SkillSpector scores are risk posture, not a verdict
 
 Static keyword-matching scanners produce real false positives on documentation-heavy skills.
