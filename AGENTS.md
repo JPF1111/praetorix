@@ -2,10 +2,10 @@
      Standing law for every AI agent working in this repository.
 
      source:      github.com/FinTechGlobalSolutions/sentinel :: governance/AGENTS.md
-     commit:      11d2d11
-     body-sha256: 3469cab7dce5ab2963e86c2ef3db14fcd721b65e104f4e1a264cb2fb8ef20bec
+     commit:      efa21dd
+     body-sha256: aac5be9245e6cb48be65466feaa872740973f2b94af4a8ac52e1e1edcf8b18a6
      companion-rules: .sentinel/governance/rules/
-     generated:   2026-09-24T14:16:30Z
+     generated:   2026-09-28T22:39:03Z
 
      Edit the master, never this copy. Regenerate with:  sentinel/bin/govsync --apply
      For the Section 0 ingestion gate, resolve the rule files it routes to against companion-rules above.
@@ -311,7 +311,9 @@ comments, commit messages, handoffs, trackers, vault notes, CHANGELOG entries, C
 and error reports. Text a program parses stays literal — code, config and manifest values (a
 `path:` field, a hash, a glob), machine-read trailers, and the paths inside a fenced,
 pasteable command. Where such a value appears in something a person reads, the surrounding
-prose carries the link. (Scope ruled by JP, 2026-09-23.)
+prose carries the link. This file's own `~/dev/sentinel/...` paths stay bare: they are typed
+as often as read, and a root file mirrored across the fleet has no link form that survives on
+GitHub. (Scope ruled by JP, 2026-09-23; this file's own paths, JP, 2026-09-24.)
 
 A link that does not open is not compliance — probe it (§9e). Under `copypaste`, give the raw
 URL or absolute path (§9c). No bare paths and no bare IDs where a link is possible. If a target
